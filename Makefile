@@ -30,7 +30,7 @@ LDFLAGS+=-g -O -Wall
 all: server client 
 
 clean:
-	- rm -f *.o server client tlsServer 
+	- rm *.o server client tlsServer 
 
 tar: $(TARS)
 	cd ..; tar cvfz `date +"stund/stund_$(VERSION)_$(PROG)%b%d.tgz"` \
